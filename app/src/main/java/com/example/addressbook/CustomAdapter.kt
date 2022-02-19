@@ -49,6 +49,9 @@ class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }.run { context.startActivity(this) }
+
         }
+
+
     }
 }

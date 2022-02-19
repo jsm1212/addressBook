@@ -12,11 +12,8 @@ class SearchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
-        val editSearchName = findViewById<EditText>(R.id.editSearchName).text
-        val searchBtn = findViewById<Button>(R.id.SearchBtn)
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView2)
 
-        searchBtn.setOnClickListener {
             val adapter = CustomAdapter(this)
             recyclerView.adapter = adapter
 
@@ -25,7 +22,7 @@ class SearchActivity : AppCompatActivity() {
 
             recyclerView.setHasFixedSize(true)
 
-            adapter.dataList.addAll(DBHelper.getInstance(this, "address.db").select(editSearchName.toString()))
-        }
+            adapter.dataList.addAll(DBHelper.getInstance(this, "address.db").select())
+
     }
 }

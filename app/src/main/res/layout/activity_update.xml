@@ -5,8 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ProfileDetailActivity">
-
+        tools:context=".UpdateActivity">
     <TextView
             android:text="주소"
             android:textSize="30dp"
@@ -52,56 +51,53 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.139" app:layout_constraintVertical_bias="0.448"/>
-    <TextView
-            android:text="TextView"
-            android:textSize="25dp"
-            android:gravity="center"
-            android:layout_width="304dp"
-            android:layout_height="72dp" android:id="@+id/profileName"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.807" app:layout_constraintVertical_bias="0.299"/>
-    <TextView
-            android:text="TextView"
-            android:textSize="25dp"
-            android:gravity="center"
-            android:layout_width="304dp"
-            android:layout_height="72dp" android:id="@+id/profileTel"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.807" app:layout_constraintVertical_bias="0.447"/>
-    <TextView
-            android:text="TextView"
-            android:textSize="25dp"
-            android:gravity="center"
-            android:layout_width="304dp"
-            android:layout_height="72dp" android:id="@+id/profileAddress"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.807" app:layout_constraintVertical_bias="0.597"/>
-    <TextView
-            android:text="TextView"
-            android:textSize="25dp"
-            android:gravity="center"
-            android:layout_width="304dp"
-            android:layout_height="72dp" android:id="@+id/profileEmail"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.807" app:layout_constraintVertical_bias="0.755"/>
     <Button
-            android:text="삭제"
-            android:textSize="30dp"
-            android:layout_width="208dp"
-            android:layout_height="78dp" android:id="@+id/deleteBtn"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.854" app:layout_constraintVertical_bias="0.937"/>
-    <Button
-            android:text="수정"
+            android:text="수정하기"
             android:textSize="30dp"
             android:layout_width="208dp"
             android:layout_height="78dp" android:id="@+id/updateBtn"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.165" app:layout_constraintVertical_bias="0.937"/>
+            app:layout_constraintVertical_bias="0.934"/>
+    <EditText
+            android:layout_width="268dp"
+            android:layout_height="71dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="25dp"
+            android:id="@+id/updateEditName"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.813" app:layout_constraintVertical_bias="0.299"/>
+    <EditText
+            android:layout_width="268dp"
+            android:layout_height="71dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="25dp"
+            android:id="@+id/updateEditTel"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.813" app:layout_constraintVertical_bias="0.446"/>
+    <EditText
+            android:layout_width="268dp"
+            android:layout_height="71dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="25dp"
+            android:id="@+id/updateEditAddress"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.813" app:layout_constraintVertical_bias="0.597"/>
+    <EditText
+            android:layout_width="268dp"
+            android:layout_height="71dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="25dp"
+            android:id="@+id/updateEditEmail"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.813" app:layout_constraintVertical_bias="0.752"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

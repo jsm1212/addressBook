@@ -10,6 +10,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AddressBook">
         <activity
+                android:name=".UpdateActivity"
+                android:exported="true"/>
+        <activity
                 android:name=".ProfileDetailActivity"
                 android:exported="true"/>
         <activity
