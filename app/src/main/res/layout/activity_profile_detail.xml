@@ -74,11 +74,11 @@
             android:text="TextView"
             android:textSize="25dp"
             android:gravity="center"
-            android:layout_width="304dp"
-            android:layout_height="72dp" android:id="@+id/profileAddress"
+            android:layout_width="202dp"
+            android:layout_height="73dp" android:id="@+id/profileAddress"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.807" app:layout_constraintVertical_bias="0.597"/>
+            app:layout_constraintHorizontal_bias="0.6" app:layout_constraintVertical_bias="0.598"/>
     <TextView
             android:text="TextView"
             android:textSize="25dp"
@@ -104,4 +104,11 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.165" app:layout_constraintVertical_bias="0.937"/>
+    <Button
+            android:text="지도보기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/mapBtn"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.887" app:layout_constraintVertical_bias="0.595"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

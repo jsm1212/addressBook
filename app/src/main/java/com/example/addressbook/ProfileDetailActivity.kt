@@ -45,5 +45,15 @@ class ProfileDetailActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        val mapBtn = findViewById<Button>(R.id.mapBtn)
+
+        mapBtn.setOnClickListener {
+            val i = Intent(this, MapActivity::class.java)
+
+            i.putExtra("data",data)
+
+            startActivity(i)
+        }
+
     }
 }
