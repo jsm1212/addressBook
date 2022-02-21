@@ -65,11 +65,11 @@
             android:text="TextView"
             android:textSize="25dp"
             android:gravity="center"
-            android:layout_width="304dp"
-            android:layout_height="72dp" android:id="@+id/profileTel"
+            android:layout_width="225dp"
+            android:layout_height="82dp" android:id="@+id/profileTel"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.807" app:layout_constraintVertical_bias="0.447"/>
+            app:layout_constraintHorizontal_bias="0.637" app:layout_constraintVertical_bias="0.452"/>
     <TextView
             android:text="TextView"
             android:textSize="25dp"
@@ -111,4 +111,11 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.887" app:layout_constraintVertical_bias="0.595"/>
+    <Button
+            android:text="전화걸기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/callBtn"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.916" app:layout_constraintVertical_bias="0.455"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

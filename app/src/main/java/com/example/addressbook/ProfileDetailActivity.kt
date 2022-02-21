@@ -1,6 +1,7 @@
 package com.example.addressbook
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -53,6 +54,16 @@ class ProfileDetailActivity : AppCompatActivity() {
             i.putExtra("data",data)
 
             startActivity(i)
+        }
+
+        val callBtn = findViewById<Button>(R.id.callBtn)
+
+        callBtn.setOnClickListener {
+            var intent = Intent(Intent.ACTION_DIAL)
+            intent.data = Uri.parse("tel:"+ tel.text)
+            if(intent.resolveActivity(packageManager) != null){
+                startActivity(intent)
+            }
         }
 
     }
